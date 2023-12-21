@@ -5,7 +5,7 @@ const predict = async (req, res) => {
   try {
     const { text } = req.body
     const city = req.query.kota
-    const apiurl = "http://127.0.0.1:4000/predict_text";
+    const apiurl = "https://api-ml-trec-im2d257paa-et.a.run.app/predict_text";
     
     // Make a POST request using Axios
     const getRecommendation = await axios.post(apiurl, {
